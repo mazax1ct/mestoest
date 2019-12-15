@@ -1,0 +1,54 @@
+.banner
+  align-items: center
+  background-color: $brand_color_1
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  color: #fff
+  display: flex
+  height: calc(100vh - 70px)
+  max-height: 450px
+  min-height: 300px
+
+  @media(min-width: 768px)
+    min-height: 380px
+
+  @media(min-width: 1200px)
+    max-height: 665px
+
+  .container
+    max-width: 1305px
+    width: 100%
+
+  h1
+    color: #fff
+    font-size: 30px
+    line-height: 40px
+    letter-spacing: -1px
+    margin-bottom: 36px
+
+    @media(min-width: 768px)
+      font-size: 40px
+      line-height: 50px
+
+    @media(min-width: 1200px)
+      font-size: 50px
+      line-height: 70px
+
+  &__text
+    font-size: 20px
+    margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      font-size: 40px
+      line-height: 70px
+      margin-bottom: 52px
+
+  &__text2
+    @media(min-width: 1200px)
+      font-size: 25px
+
+    .button
+      @media(min-width: 768px)
+        margin-left: 80px

@@ -1,0 +1,44 @@
+.block-1
+  padding-top: 40px
+  padding-bottom: 40px
+
+  @media(min-width: 1200px)
+    padding-top: 95px
+    padding-bottom: 99px
+
+  .container
+    max-width: 1420px
+
+.features
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__item
+    margin-bottom: 25px
+    position: relative
+
+    @media(min-width: 600px)
+      width: 50%
+
+    @media(min-width: 960px)
+      margin-bottom: 0
+      width: auto
+
+  &__separator
+    display: none
+    padding-top: 10px
+
+    @media(min-width: 992px)
+      display: block
+
+.feature
+  text-align: center
+
+  img
+    margin-bottom: 15px
+    margin-left: -15px
+
+    @media(min-width: 992px)
+      margin-bottom: 21px

@@ -1,0 +1,51 @@
+.block-6
+  background-color: $brand_color_2
+  color: #fff
+  padding-top: 40px
+  padding-bottom: 40px
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 100px
+
+  .container
+    max-width: 900px
+
+    @media(min-width: 1500px)
+      max-width: 1330px
+
+  h2
+    color: #fff
+    margin-bottom: 50px
+    text-align: center
+
+.features3
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+
+  &__block
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
+      @media(min-width: 600px)
+        margin-bottom: 0
+
+  &__item
+    &:not(:last-child)
+      margin-bottom: 30px
+
+      @media(min-width: 1200px)
+        margin-bottom: 75px
+
+.feature3
+  align-items: center
+  display: flex
+
+  &__image
+    min-width: 70px
+    margin-right: 24px
+    width: 70px

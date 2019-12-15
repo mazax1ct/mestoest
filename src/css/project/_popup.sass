@@ -1,0 +1,105 @@
+.popup-wrapper
+  background: none
+  padding: 0
+
+.popup
+  background-color: #fff
+  border-radius: 10px
+  padding-top: 40px
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 30px
+
+  @media(min-width: 680px)
+    padding-top: 115px
+    padding-left: 130px
+    padding-right: 130px
+    padding-bottom: 124px
+    width: 660px
+
+  &__close
+    align-items: center
+    border: none
+    background: #fff
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 40px
+
+    @media(min-width: 650px)
+      height: 62px
+      right: 41px
+      top: 37px
+      width: 62px
+
+  &__close-icon
+    fill: $brand_color_3
+    height: 24px
+    width: 24px
+
+    @media(min-width: 650px)
+      height: 33px
+      width: 33px
+
+  &__title
+    font-size: 30px
+    line-height: 40px
+    letter-spacing: -1px
+    margin-bottom: 15px
+    text-align: center
+
+    @media(min-width: 650px)
+      font-size: 50px
+      line-height: 60px
+
+  &__text
+    color: #6D6D6D
+    margin-bottom: 15px
+    text-align: center
+
+    @media(min-width: 650px)
+      margin-bottom: 73px
+
+  &__form
+    margin-bottom: 20px
+
+    @media(min-width: 650px)
+      margin-bottom: 54px
+
+  &__form-label
+    display: block
+    margin-bottom: 12px
+
+  &__form-title
+    color: #575757
+    font-size: 18px
+    font-weight: 500
+    line-height: 20px
+    margin-top: 35px
+    margin-bottom: 10px
+    padding-left: 16px
+
+  &__form-button-block
+    margin-top: 20px
+
+    @media(min-width: 650px)
+      margin-top: 93px
+
+    .button
+      height: 62px
+      font-size: 20px
+      width: 100%
+
+  &__note
+    color: #575757
+    text-align: center
+
+    @media(min-width: 650px)
+      font-size: 18px
+      line-height: 20px

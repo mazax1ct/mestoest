@@ -1,0 +1,53 @@
+<div id="popup" class="popup-wrapper" style="display: none">
+  <div class="popup">
+    <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+    <p class="popup__title">Забронировать</p>
+    <p class="popup__text">Оставьте свои контактные данные, чтобы мы могли связаться с Вами.</p>
+    <form class="popup__form" method="post" action="/">
+      <label class="popup__form-label" for="name">
+        <input id="name" class="input" type="text" name="name" value="" placeholder="Ваше имя">
+      </label>
+      <label class="popup__form-label" for="email">
+        <input id="email" class="input" type="text" name="email" value="" placeholder="Ваш email">
+      </label>
+      <label class="popup__form-label" for="phone">
+        <input id="phone" class="input" type="text" name="phone" value="" placeholder="Ваш телефон">
+      </label>
+      <p class="popup__form-title">Площадка</p>
+      <label class="popup__form-label">
+        <select class="js-select">
+          <option value="1">Пискаревский пр. 150 к2</option>
+          <option value="2">Кудрово, пр. Строителей 7</option>
+          <option value="3">Выборгское шоссе, 200А</option>
+          <option value="4">Маршала Казакова, 21</option>
+          <option value="5">Лиговский пр./Растанная (Камчатская, 1)</option>
+          <option value="6">ул. Хадии Давлетшиной, 30</option>
+        </select>
+      </label>
+      <p class="popup__form-title">Бокс</p>
+      <label class="popup__form-label">
+        <select class="js-select">
+          <option value="1">Бокс — 2,5 м2</option>
+          <option value="2">Бокс — 3,5 м2</option>
+          <option value="3">Бокс — 4,6 м2</option>
+          <option value="4">Бокс — 6,8 м2</option>
+          <option value="5">Бокс — 13,8 м2</option>
+          <option value="6">Бокс — 28,2 м2</option>
+        </select>
+      </label>
+      <label class="popup__form-babel checkbox-label" for="terms">
+        <input id="terms" class="js-terms" type="checkbox" name="terms">
+        <span class="checkbox-icon"></span>
+        <span class="checkbox-label__text">Согласен на обработку персональных данных</span>
+      </label>
+      <div class="popup__form-button-block">
+        <button class="button button--type_2" type="submit" disabled>Отправить</button>
+      </div>
+    </form>
+    <p class="popup__note">Заполнение этой формы вас ни к чему не обязывает. Наш менеджер свяжется с вами и ответит на все вопросы.</p>
+  </div>
+</div>

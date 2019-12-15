@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Место есть</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="burger" viewBox="0 0 24 11">
+      <g>
+        <rect width="24" height="1" rx="0.5" />
+        <rect y="5" width="24" height="1" rx="0.5" />
+        <rect y="10" width="24" height="1" rx="0.5" />
+      </g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 34 34">
+      <path d="M21.1096 16.9997L32.6135 5.49576C33.1595 4.95075 33.4666 4.21118 33.4673 3.43974C33.4679 2.6683 33.1621 1.92818 32.6171 1.38221C32.0721 0.836236 31.3325 0.529129 30.5611 0.528448C29.7897 0.527767 29.0495 0.833567 28.5036 1.37858L16.9997 12.8825L5.49576 1.37858C4.94979 0.832604 4.20929 0.525879 3.43717 0.525879C2.66505 0.525879 1.92455 0.832604 1.37858 1.37858C0.832604 1.92455 0.525879 2.66505 0.525879 3.43717C0.525879 4.20929 0.832604 4.94979 1.37858 5.49576L12.8825 16.9997L1.37858 28.5036C0.832604 29.0495 0.525879 29.79 0.525879 30.5622C0.525879 31.3343 0.832604 32.0748 1.37858 32.6208C1.92455 33.1667 2.66505 33.4735 3.43717 33.4735C4.20929 33.4735 4.94979 33.1667 5.49576 32.6208L16.9997 21.1169L28.5036 32.6208C29.0495 33.1667 29.79 33.4735 30.5622 33.4735C31.3343 33.4735 32.0748 33.1667 32.6208 32.6208C33.1667 32.0748 33.4735 31.3343 33.4735 30.5622C33.4735 29.79 33.1667 29.0495 32.6208 28.5036L21.1096 16.9997Z" />
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header__top container">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="Место есть">
+      </div>
+      <p class="header__slogan">Всегда «Место есть» для личного пространства</p>
+      <p class="header__phone-block">
+        <a class="header__phone" href="tel:+78124438727">8 812 443-87-27</a>
+        <span class="header__phone-note">Круглосуточно</span>
+      </p>
+      <button class="button button--type_1" type="button" data-fancybox="popup" data-src="#popup">Забронировать бокс</button>
+      <button class="js-menu-opener menu-opener" type="button">
+        <svg class="menu-opener__icon" aria-hidden="true">
+          <use xlink:href="#burger" />
+        </svg>
+      </button>
+    </div>
+    <nav class="main-menu">
+      <button class="js-menu-closer menu-closer" type="button">
+        <svg class="menu-closer__icon" aria-hidden="true">
+          <use xlink:href="#close" />
+        </svg>
+      </button>
+      <div class="container">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Боксы и цены</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Адреса</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Дополнительные услуги</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Акции</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Отзывы</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Фотогалерея</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Блог</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="banner" style="background-image: url('images/banner.jpg')">
+    <div class="container">
+      <h1>Склады-боксы<br> в аренду от <span class="bold">2 500 ₽</span></h1>
+      <p class="banner__text">для личных вещей <span class="color-orange">/</span> для вашего бизнеса</p>
+      <p class="banner__text2">Попробуйте первую неделю хранения бесплатно! <button class="button button--type_2" type="button" data-fancybox="popup3" data-src="#popup">Забронировать бокс</button></p>
+    </div>
+  </div>
+
+  <div class="block-1">
+    <div class="container">
+      <div class="features">
+        <div class="features__item">
+          <div class="feature">
+            <img src="images/icons/block-1/icon-1.svg" alt="24/7">
+            <p class="feature__text">Позвоните нам 24/7</p>
+          </div>
+        </div>
+        <div class="features__separator"><img src="images/icons/arrow-right.svg" alt=""></div>
+        <div class="features__item">
+          <div class="feature">
+            <img src="images/icons/block-1/icon-2.svg" alt="Оптимальный размер">
+            <p class="feature__text">Подберем для вас<br> оптимальное расположение<br> и размер бокса</p>
+          </div>
+        </div>
+        <div class="features__separator"><img src="images/icons/arrow-right.svg" alt=""></div>
+        <div class="features__item">
+          <div class="feature">
+            <img src="images/icons/block-1/icon-3.svg" alt="Оплата онлайн">
+            <p class="feature__text">Заключение договора<br> и оплата — онлайн</p>
+          </div>
+        </div>
+        <div class="features__separator"><img src="images/icons/arrow-right.svg" alt=""></div>
+        <div class="features__item">
+          <div class="feature">
+            <img src="images/icons/block-1/icon-4.svg" alt="Перевозки">
+            <p class="feature__text">Заезжаете на склад<br> (при необходимости<br> организуем перевозки)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-2">
+    <div class="container">
+      <h2>Боксы</h2>
+      <p>При бронировании на 2 месяца — скидка 3%, на 3 месяца — 5% <a href="#" target="_blank">Скачать прайс</a></p>
+    </div>
+  </div>
+
+  <div class="block-3">
+    <div class="container">
+      <h2>Нужна наша помощь в рассчете стоимости<br> или подборе бокса?</h2>
+      <p>Оставьте заявку, наш менеджер с вами свяжется</p>
+      <p><button class="button button--type_2" type="button" data-fancybox="popup4" data-src="#popup">Забронировать бокс</button></p>
+    </div>
+  </div>
+
+  <div class="block-4">
+    <div class="container">
+      <h2>С нами легко</h2>
+      <p class="block-4__text">Мы — «Место Есть», склады для индвидуального хранения вещей<br> на базе морских контейнеров от 3,5 м2 до 30 м2</p>
+      <div class="features2">
+        <div class="features2__item">
+          <div class="feature2">
+            <img src="images/icons/block-4/icon-1.svg" alt="Круглосуточный доступ">
+            <p>Круглосуточный<br> доступ</p>
+          </div>
+        </div>
+        <div class="features2__item">
+          <div class="feature2">
+            <img src="images/icons/block-4/icon-2.svg" alt="Круглосуточный доступ">
+            <p>Видеонаблюдение</p>
+          </div>
+        </div>
+        <div class="features2__item">
+          <div class="feature2">
+            <img src="images/icons/block-4/icon-3.svg" alt="Круглосуточный доступ">
+            <p>Принимаем все<br> виды оплаты</p>
+          </div>
+        </div>
+        <div class="features2__item">
+          <div class="feature2">
+            <img src="images/icons/block-4/icon-4.svg" alt="Круглосуточный доступ">
+            <p>Аренда<br> от двух недель</p>
+          </div>
+        </div>
+        <div class="features2__item">
+          <div class="feature2">
+            <img src="images/icons/block-4/icon-5.svg" alt="Круглосуточный доступ">
+            <p>Чистые<br> и герметичные<br> склады</p>
+          </div>
+        </div>
+        <div class="features2__item">
+          <div class="feature2">
+            <img src="images/icons/block-4/icon-6.svg" alt="Круглосуточный доступ">
+            <p>Сохранность</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-5">
+    Карта
+  </div>
+
+  <div class="block-6">
+    <div class="container">
+      <h2>Наши дополнительные услуги</h2>
+      <div class="features3">
+        <div class="features3__block">
+          <div class="features3__item">
+            <div class="feature3">
+              <div class="feature3__image"><img src="images/icons/block-6/icon-1.svg" alt="Антивандальные замки"></div>
+              <p>Предоставляем в аренду<br> контейнерные антивандальные замки<br> с системой защиты «Антивзлом»</p>
+            </div>
+          </div>
+          <div class="features3__item">
+            <div class="feature3">
+              <div class="feature3__image"><img src="images/icons/block-6/icon-2.svg" alt="Разгрузка"></div>
+              <p>Разгрузка на площадке: вилочные<br> погрузчики или ручная разгрузка<br> по предварительной записи</p>
+            </div>
+          </div>
+        </div>
+        <div class="features3__block">
+          <div class="features3__item">
+            <div class="feature3">
+              <div class="feature3__image"><img src="images/icons/block-6/icon-3.svg" alt="Стеллажи и полки"></div>
+              <p>При необходимости организуем<br> для вас пространство: установим<br> стеллажи или полки</p>
+            </div>
+          </div>
+          <div class="features3__item">
+            <div class="feature3">
+              <div class="feature3__image"><img src="images/icons/block-6/icon-4.svg" alt="Грузоперевозки"></div>
+              <p>Организуем для вас грузоперевозки<br> — как с грузчиками, так и без</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-7">
+    <div class="container">
+      <h2>Акции и скидки</h2>
+      <p class="block-7__text">За подробностями обращайтесь к менеджеру</p>
+      <div class="features4">
+        <div class="features4__item">
+          <div class="feature4">
+            <div class="feature4__inner">
+              <img src="images/icons/block-7/icon-1.svg" alt="">
+              <p class="feature4__text">Неделя в подарок<br> при аренде от месяца</p>
+              <p class="feature4__text-small">Акция для всех новых клиентов</p>
+            </div>
+          </div>
+        </div>
+        <div class="features4__item">
+          <div class="feature4">
+            <div class="feature4__inner">
+              <img width="210" src="images/icons/block-7/icon-2.png" alt="">
+              <p class="feature4__text">Скидка на грузоперевозки<br> «Грузовичкоф» — 20%</p>
+              <p class="feature4__text-small">Только для наших клиентов</p>
+            </div>
+          </div>
+        </div>
+        <div class="features4__item">
+          <div class="feature4">
+            <div class="feature4__inner">
+              <img src="images/icons/block-7/icon-3.svg" alt="">
+              <p class="feature4__text">Скидки до 15%<br> при единовременной оплате</p>
+            </div>
+          </div>
+        </div>
+        <div class="features4__item">
+          <div class="feature4">
+            <div class="feature4__inner">
+              <img src="images/icons/block-7/icon-4.svg" alt="">
+              <p class="feature4__text">Приведи друга и получи<br> неделю в подарок</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__top container">
+      <div class="footer__logo">
+        <img src="images/logo.svg" alt="Место есть">
+      </div>
+      <p class="footer__copyright">2019 © Все права защищены. Место Есть</p>
+      <p class="footer__phone-block">
+        <a class="footer__phone" href="tel:+78124438727">8 812 443-87-27</a>
+        <span class="footer__phone-note">Круглосуточно</span>
+      </p>
+      <p class="footer__email"><a class="footer__email-link" href="mailto:info@mestoest.ru">info@mestoest.ru</a></p>
+      <button class="button button--type_2" type="button" data-fancybox="popup2" data-src="#popup">Забронировать бокс</button>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="social-links">
+          <a class="social-link" href="#" target="_blank" title="Facebook">
+            <img src="images/icons/fb.svg" alt="Facebook">
+          </a>
+          <a class="social-link" href="#" target="_blank" title="Вконтакте">
+            <img src="images/icons/vk.svg" alt="Vk.com">
+          </a>
+          <a class="social-link" href="#" target="_blank" title="Instagram">
+            <img src="images/icons/inst.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="popup" class="popup-wrapper" style="display: none">
+    <div class="popup">
+      <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+        <svg class="popup__close-icon" aria-hidden="true">
+          <use xlink:href="#close" />
+        </svg>
+      </button>
+      <p class="popup__title">Забронировать</p>
+      <p class="popup__text">Оставьте свои контактные данные, чтобы мы могли связаться с Вами.</p>
+      <form class="popup__form" method="post" action="/">
+        <label class="popup__form-label" for="name">
+          <input id="name" class="input" type="text" name="name" value="" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label" for="email">
+          <input id="email" class="input" type="text" name="email" value="" placeholder="Ваш email">
+        </label>
+        <label class="popup__form-label" for="phone">
+          <input id="phone" class="input" type="text" name="phone" value="" placeholder="Ваш телефон">
+        </label>
+        <p class="popup__form-title">Площадка</p>
+        <label class="popup__form-label">
+          <select class="js-select">
+            <option value="1">Пискаревский пр. 150 к2</option>
+            <option value="2">Кудрово, пр. Строителей 7</option>
+            <option value="3">Выборгское шоссе, 200А</option>
+            <option value="4">Маршала Казакова, 21</option>
+            <option value="5">Лиговский пр./Растанная (Камчатская, 1)</option>
+            <option value="6">ул. Хадии Давлетшиной, 30</option>
+          </select>
+        </label>
+        <p class="popup__form-title">Бокс</p>
+        <label class="popup__form-label">
+          <select class="js-select">
+            <option value="1">Бокс — 2,5 м2</option>
+            <option value="2">Бокс — 3,5 м2</option>
+            <option value="3">Бокс — 4,6 м2</option>
+            <option value="4">Бокс — 6,8 м2</option>
+            <option value="5">Бокс — 13,8 м2</option>
+            <option value="6">Бокс — 28,2 м2</option>
+          </select>
+        </label>
+        <label class="popup__form-babel checkbox-label" for="terms">
+          <input id="terms" class="js-terms" type="checkbox" name="terms">
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-label__text">Согласен на обработку персональных данных</span>
+        </label>
+        <div class="popup__form-button-block">
+          <button class="button button--type_2" type="submit" disabled>Отправить</button>
+        </div>
+      </form>
+      <p class="popup__note">Заполнение этой формы вас ни к чему не обязывает. Наш менеджер свяжется с вами и ответит на все вопросы.</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  
+  <script type="text/javascript" src="js/select2.full.min.js"></script>
+  
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

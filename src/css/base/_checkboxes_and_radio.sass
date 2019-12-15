@@ -1,0 +1,69 @@
+.checkbox-label,
+.radio-label
+  display: block
+  font-size: 15px
+  line-height: 20px
+  position: relative
+  padding-left: 35px
+
+  &.disabled
+    &:focus
+      outline: none
+
+  &:focus
+    outline: 1px dotted inherit
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+  &__text
+    color: #BDBDBD
+    display: inline-block
+    min-height: 24px
+    padding-top: 2px
+
+.checkbox-icon,
+.radio-icon
+  border: 2px solid #9F9F9F
+  cursor: pointer
+  height: 24px
+  left: 0
+  position: absolute
+  top: 0
+  text-align: center
+  width: 24px
+
+.checkbox-icon
+  border-radius: 50%
+
+.radio-icon
+  border-radius: 50%
+  font-size: 12px
+  top: -1px
+
+input[type="checkbox"]:checked + .checkbox-icon
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23FA943A'/%3E%3Cpath d='M15.4937 8.75844C15.8383 8.41385 16.397 8.41385 16.7416 8.75844C17.0861 9.10302 17.0861 9.66169 16.7416 10.0063L11.4474 15.3004C11.1029 15.645 10.5442 15.645 10.1996 15.3004L7.25844 12.3592C6.91385 12.0146 6.91385 11.456 7.25844 11.1114C7.60302 10.7668 8.16169 10.7668 8.50627 11.1114L10.8235 13.4286L15.4937 8.75844Z' fill='white'/%3E%3C/svg%3E%0A")
+  border: none
+
+input[type="checkbox"]:checked ~ .checkbox-label__text
+  color: #575757
+
+input[type="radio"]:checked + .radio-icon:before
+  background-color: #000
+  border-radius: 50%
+  content: ""
+  height: 14px
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 14px
+
+input[type="radio"]:focus + .radio-icon,
+input[type="radio"]:active + .radio-icon
+  box-shadow: 0 0 0 2px #00d123

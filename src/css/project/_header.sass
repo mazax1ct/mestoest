@@ -1,0 +1,167 @@
+.header
+  .container
+    max-width: 1305px
+
+  &__top
+    align-items: center
+    display: flex
+    justify-content: space-between
+    padding-top: 15px
+    padding-bottom: 15px
+
+    @media(min-width: 1500px)
+      padding-top: 30px
+      padding-bottom: 30px
+
+  &__logo
+    min-width: 40px
+    width: 40px
+
+    @media(min-width: 768px)
+      min-width: 64px
+      width: 64px
+
+  &__slogan
+    color: $brand_color_1
+    font-family: 'Echoes Sans', Arial, sans-serif
+    font-size: 21px
+    font-weight: 500
+    margin-bottom: 0
+
+    @media(max-width: 1199px)
+      display: none
+
+  &__phone-block
+    line-height: 1
+    margin-bottom: 0
+
+    @media(max-width: 599px)
+      display: none
+
+  &__phone
+    border-bottom: 1px dotted transparent
+    color: $brand_color_1
+    display: block
+    font-size: 20px
+    font-weight: 700
+    line-height: 21px
+    text-decoration: none
+    transition: border-color 0.3s, color 0.3s
+
+    @media(min-width: 768px)
+      font-size: 25px
+      line-height: 26px
+
+    &:hover,
+    &:focus
+      border-bottom-color: darken($brand_color_1, 5%)
+      color: darken($brand_color_1, 5%)
+
+  &__phone-note
+    font-size: 12px
+
+.menu-opener
+  align-items: center
+  background-color: $brand_color_1
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  display: flex
+  height: 40px
+  justify-content: center
+  padding: 0
+  width: 40px
+
+  @media(min-width: 1200px)
+    display: none
+
+  &__icon
+    fill: #fff
+    height: 24px
+    width: 24px
+
+.menu-closer
+  align-items: center
+  background-color: #fff
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  display: flex
+  height: 40px
+  justify-content: center
+  left: auto
+  padding: 0
+  position: absolute
+  right: 15px
+  top: 15px
+  width: 40px
+  z-index: 1
+
+  @media(min-width: 1200px)
+    display: none
+
+  &__icon
+    fill: $brand_color_1
+    height: 24px
+    width: 24px
+
+.main-menu
+  align-items: center
+  background-color: $brand_color_2
+  display: flex
+  min-height: 80px
+
+  @media(max-width: 1199px)
+    display: none
+    height: 100%
+    left: 0
+    overflow-y: auto
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 10
+
+  &.is-open
+    @media(max-width: 1199px)
+      display: block
+
+  @media(min-width: 1500px)
+    min-height: 123px
+
+  .container
+    width: 100%
+
+  &__list
+    font-size: 24px
+    font-weight: 500
+    list-style: none
+    margin: 0
+    padding: 0
+
+    @media(max-width: 1199px)
+      padding-top: 70px
+
+    @media(min-width: 1200px)
+      display: flex
+      font-size: 20px
+      justify-content: space-between
+
+    @media(min-width: 1500px)
+      font-size: 24px
+
+  &__item
+    margin: 0
+
+  &__link
+    border-bottom: 4px solid transparent
+    color: #fff
+    display: inline-block
+    padding-top: 10px
+    padding-bottom: 6px
+    text-decoration: none
+    transition: border-color 0.3s
+
+    &:hover,
+    &:focus,
+    &.is-active
+      border-bottom-color: $brand_color_3

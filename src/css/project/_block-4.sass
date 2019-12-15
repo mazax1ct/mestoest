@@ -1,0 +1,50 @@
+.block-4
+  background-color: $brand_color_2
+  color: #fff
+  padding-top: 40px
+  padding-bottom: 40px
+  text-align: center
+
+  @media(min-width: 1200px)
+    padding-top: 138px
+    padding-bottom: 62px
+
+  .container
+    max-width: 1480px
+
+  h2
+    color: #fff
+    margin-bottom: 32px
+
+  &__text
+    color: #F2F2F2
+    margin-bottom: 64px
+
+.features2
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1200px)
+    justify-content: space-between
+
+  &__item
+    @media(min-width: 600px)
+      width: 50%
+
+    @media(min-width: 768px)
+      width: 33.33333%
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+      width: auto
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
+      @media(min-width: 1200px)
+        margin-bottom: 0
+
+.feature2
+  img
+    margin-bottom: 23px
