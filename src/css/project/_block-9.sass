@@ -1,0 +1,79 @@
+.block-9
+  padding-top: 40px
+
+  @media(min-width: 1200px)
+    padding-top: 65px
+
+  h2
+    margin-bottom: 24px
+    text-align: center
+
+.reviews
+  overflow-x: auto
+
+  &__list
+    display: flex
+
+    @media(min-width: 768px)
+      padding-left: 20px
+
+    @media(min-width: 1600px)
+      padding-left: 50px
+
+    @media(min-width: 1900px)
+      padding-left: 80px
+
+  &__item
+    margin-right: 20px
+    min-width: 530px
+    padding-top: 30px
+    padding-bottom: 30px
+    width: 530px
+
+    @media(min-width: 1600px)
+      min-width: 400px
+      margin-right: 45px
+      width: 400px
+
+    @media(min-width: 1900px)
+      min-width: 760px
+      width: 760px
+
+    &--video
+      @media(min-width: 1900px)
+        min-width: 560px
+        width: 560px
+
+      a
+        align-items: center
+        display: flex
+        height: 100%
+        position: relative
+
+        &::after
+          background: url('../images/icons/youtube.svg') no-repeat 0 0 transparent
+          content: ''
+          height: 57px
+          left: 50%
+          position: absolute
+          top: 50%
+          transform: translate(-50%, -50%)
+          width: 82px
+          z-index: 1
+
+.review
+  background-color: #fff
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.1)
+  border-radius: 10px
+  color: #000
+  padding: 30px
+  text-align: center
+
+  @media(min-width: 1900px)
+    font-size: 20px
+
+  &__text
+    margin-bottom: 30px
+
+  &__author
+    color: #6D6D6D

@@ -1,7 +1,7 @@
-//функция навешивания класса с тенью на шапку
+//функция навешивания класса на шапку
 var resize_scroll = function(e) {
   var h = $(".header");
-  $(window).scrollTop() > h.height()
+  $(window).scrollTop() > $(".header__top").innerHeight()
     ? h.addClass("scrolled")
     : h.removeClass("scrolled");
 };
@@ -34,6 +34,11 @@ $(document).ready(function () {
   $('.js-popup-closer').click(function () {
     $.fancybox.close();
     return false;
+  });
+
+  //кастомный скролл
+  $('.js-custom-scroll').each(function(index, element) {
+    new SimpleBar(element, { autoHide: false })
   });
 
   //запуск плавающего левого меню в разделе доставки
@@ -69,14 +74,6 @@ $(document).ready(function () {
     $(".js-sticky-block").trigger("sticky_kit:recalc");
     return false;
   });
-
-  //попап
-  if ($('[data-fancybox]').length) {
-    $('[data-fancybox]').fancybox({
-      smallBtn: false,
-      toolbar: false
-    });
-  }
 });
 
 //перезапуск функции навешивания класса с тенью на шапку при скролле и ресайзе
@@ -120,7 +117,7 @@ $(window).on("orientationchange", function(event) {
   }
 });
 
-
+//изменение состояния кнопки отправки в попапе
 $(document).on('change', '.js-terms', function() {
   var this_ = $(this);
   var submit = $(this).closest('form').find('.button');

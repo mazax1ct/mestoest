@@ -1,4 +1,32 @@
 .header
+  background-color: #fff
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.1)
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 5
+
+  @media(min-width: 1200px)
+    box-shadow: none
+    left: auto
+    position: static
+    top: auto
+    z-index: auto
+
+  &.scrolled
+    @media(min-width: 1200px)
+      padding-bottom: 80px
+
+    .main-menu
+      @media(min-width: 1200px)
+        box-shadow: 0 6px 6px 0 rgba(0,0,0,0.1)
+        left: 0
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 5
+
   .container
     max-width: 1305px
 
@@ -17,7 +45,7 @@
     min-width: 40px
     width: 40px
 
-    @media(min-width: 768px)
+    @media(min-width: 1200px)
       min-width: 64px
       width: 64px
 
@@ -125,7 +153,7 @@
     @media(max-width: 1199px)
       display: block
 
-  @media(min-width: 1500px)
+  @media(min-width: 1900px)
     min-height: 123px
 
   .container
@@ -146,7 +174,7 @@
       font-size: 20px
       justify-content: space-between
 
-    @media(min-width: 1500px)
+    @media(min-width: 1900px)
       font-size: 24px
 
   &__item

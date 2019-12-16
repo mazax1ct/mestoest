@@ -20,16 +20,19 @@
     min-width: 40px
     width: 40px
 
-    @media(min-width: 768px)
+    @media(min-width: 1200px)
       min-width: 64px
       width: 64px
 
   &__copyright,
   &__email
     color: $brand_color_1
-    font-size: 21px
+    font-size: 18px
     font-weight: 500
     margin-bottom: 0
+
+    @media(min-width: 1600px)
+      font-size: 21px
 
   &__copyright
     @media(max-width: 1199px)
@@ -74,8 +77,12 @@
 
   &__bottom
     background-color: $brand_color_2
-    padding-top: 15px
-    padding-bottom: 15px
+    padding-top: 5px
+    padding-bottom: 5px
+
+    @media(min-width: 1200px)
+      padding-top: 15px
+      padding-bottom: 15px
 
     @media(min-width: 1900px)
       padding-top: 42px
