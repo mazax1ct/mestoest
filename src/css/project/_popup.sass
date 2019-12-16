@@ -2,6 +2,9 @@
   background: none
   padding: 0
 
+  .fancybox-button
+    display: none
+
 .popup
   background-color: #fff
   border-radius: 10px
@@ -38,9 +41,14 @@
       top: 37px
       width: 62px
 
+    &:hover
+      .popup__close-icon
+        fill: $brand_color_3
+
   &__close-icon
-    fill: $brand_color_3
+    fill: #575757
     height: 24px
+    transition: fill 0.3s
     width: 24px
 
     @media(min-width: 650px)

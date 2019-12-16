@@ -15,7 +15,7 @@
 
   .container
     max-width: 1270px
-    
+
     @media(min-width: 1600px)
       max-width: 1480px
 
@@ -28,21 +28,38 @@
     margin-bottom: 64px
 
 .features2
-  @media(min-width: 600px)
-    display: flex
-    flex-wrap: wrap
+  display: flex
+  flex-wrap: wrap
+  font-size: 14px
+  margin-left: -10px
+  margin-right: -10px
 
-  @media(min-width: 1200px)
+  @media(min-width: 768px)
+    margin-right: 0
+    margin-left: 0
+
+  @media(min-width: 992px)
     justify-content: space-between
 
-  &__item
-    @media(min-width: 600px)
-      width: 50%
+  @media(min-width: 1200px)
+    font-size: 16px
 
-    @media(min-width: 768px)
+  @media(min-width: 1600px)
+    font-size: 20px
+
+  @media(min-width: 1900px)
+    font-size: 24px
+
+  &__item
+    padding-left: 10px
+    padding-right: 10px
+    width: 50%
+
+    @media(min-width: 600px)
+      padding: 0
       width: 33.33333%
 
-    @media(min-width: 1200px)
+    @media(min-width: 992px)
       margin-bottom: 0
       width: auto
 

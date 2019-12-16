@@ -41,29 +41,30 @@ $(document).ready(function () {
     new SimpleBar(element, { autoHide: false })
   });
 
-  //запуск плавающего левого меню в разделе доставки
-  if ($("#delivery-nav").length) {
-    if ($("body").width() >= 768) {
-      $(".js-sticky-block").trigger("sticky_kit:detach");
-      setTimeout(function() {
-        $(".js-sticky-block").stick_in_parent({
-          offset_top: 120
-        });
-
-        //навигация по якорям
-        $("#delivery-nav").ddscrollSpy({
-          scrolltopoffset: -120
-        });
-      }, 100);
-    }
-
-    //если блок для контента пустой, открепляем плавающее левое меню
-    if ($(".js-content-with-sticky").length) {
-      if ($('.js-content-with-sticky').html().trim() === '') {
-        $(".js-sticky-block").trigger("sticky_kit:detach");
-      }
-    }
+  //spy menu
+  var menu_offset;
+  if($('body').width() < 1200) {
+    menu_offset = -70;
   }
+
+  if($('body').width() > 1200 && $('body').width() < 1900) {
+    menu_offset = -80;
+  }
+
+  if($('body').width() > 1900) {
+    menu_offset = -123;
+  }
+
+  $("#main-menu").ddscrollSpy({
+    scrolltopoffset: menu_offset
+  });
+
+  //навигация по меню
+  $('#main-menu a').click(function () {
+    $('body').removeClass('overflow');
+    $('.main-menu').removeClass('is-open');
+    return false;
+  });
 
   //переключение табов
   $('.js-tab-nav').on('click', function() {
@@ -72,6 +73,12 @@ $(document).ready(function () {
     $('.js-tab').removeClass("is-active");
     $('.js-tab[data-target=' + $(this).attr("data-target") + ']').addClass("is-active");
     $(".js-sticky-block").trigger("sticky_kit:recalc");
+    return false;
+  });
+
+  $('.js-question-opener').on('click', function() {
+    $(this).toggleClass("is-active");
+    $(this).next('.question__cut').slideToggle();
     return false;
   });
 });
@@ -126,4 +133,4 @@ $(document).on('change', '.js-terms', function() {
   } else {
     submit.prop('disabled', true);
   }
-})
+});
