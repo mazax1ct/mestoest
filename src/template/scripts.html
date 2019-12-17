@@ -10,8 +10,6 @@
 
 <script type="text/javascript" src="js/main.js"></script>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=cba047df-856c-4d12-a13e-85e5ff327c48&lang=ru_RU&onload=init" type="text/javascript"></script>
-
 <script type="text/javascript">
   var myMap;
   var locations = [
@@ -24,7 +22,14 @@
     /*[52.586962, 58.294931, '«Место Есть» в г. Уфа, ул. Хадии Давлетшиной, 30'],*/
   ];
 
-  function init(ymaps) {
+  setTimeout(function() {
+    var elem = document.createElement('script');
+    elem.type = 'text/javascript';
+    elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=cba047df-856c-4d12-a13e-85e5ff327c48&lang=ru_RU&onload=init';
+    document.getElementById('map').appendChild(elem);
+  }, 2000);
+
+  function init() {
     myMap = new ymaps.Map('map', {
       center: [59.957262, 29.705429],
       zoom: 9
