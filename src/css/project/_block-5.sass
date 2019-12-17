@@ -29,7 +29,7 @@
   width: 100%
 
   @media(min-width: 768px)
-    padding: 0 40px
+    padding: 40px
 
   @media(min-width: 1200px)
     font-size: 16px
@@ -49,8 +49,7 @@
     width: 610px
 
   &__title
-    font-size: 20px
-    font-weight: 500
+    font-size: 32px
     margin-bottom: 15px
 
     @media(min-width: 768px)
@@ -76,6 +75,9 @@
   &__address
     &:not(:last-child)
       margin-bottom: 10px
+
+    &.is-active
+      color: $brand_color_3
 
 .map
   height: calc(100vh - 70px)

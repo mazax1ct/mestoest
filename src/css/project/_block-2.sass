@@ -10,21 +10,55 @@
   .container
     max-width: 1420px
 
+  &__download-link
+    margin-left: 28px
+
 .tabs-nav
   display: flex
+  margin-left: -15px
+  margin-right: -15px
+  overflow-x: auto
+
+  @media(min-width: 768px)
+    justify-content: center
+
+  @media(min-width: 1400px)
+    margin-top: 55px
 
   &__item
     background-color: #fff
     border-radius: 10px 10px 0 0
     display: block
-    margin-left: 25px
-    margin-right: 25px
-    padding-top: 25px
-    padding-bottom: 27px
+    margin-right: 10px
+    min-width: 100px
+    padding-top: 15px
+    padding-bottom: 15px
     text-decoration: none
     text-align: center
     transition: color 0.3s, background-color 0.3s
-    width: 175px
+    width: 100px
+
+    @media(min-width: 768px)
+      margin-left: 5px
+      margin-right: 5px
+
+    @media(min-width: 992px)
+      margin-left: 10px
+      margin-right: 10px
+      min-width: 120px
+      width: 120px
+
+    @media(min-width: 1200px)
+      min-width: 150px
+      width: 150px
+
+    @media(min-width: 1400px)
+      margin-left: 25px
+      margin-right: 25px
+      min-width: 175px
+      padding-top: 25px
+      padding-bottom: 27px
+      width: 175px
 
     &:hover,
     &.is-active
@@ -44,16 +78,22 @@
 
   &__item-title
     color: #333
-    font-size: 35px
+    font-size: 20px
     font-weight: 500
     line-height: 1.17
     margin-bottom: 9px
 
+    @media(min-width: 1400px)
+      font-size: 35px
+
   &__item-square
     color: #000
-    font-size: 20px
     line-height: 1.2
-    margin-bottom: 22px
+    margin-bottom: 10px
+
+    @media(min-width: 1400px)
+      font-size: 20px
+      margin-bottom: 22px
 
     sup
       font-size: 50%
@@ -61,14 +101,18 @@
 
   &__item-price
     color: #636363
-    font-size: 24px
     font-weight: 500
     line-height: 1.1666
+
+    @media(min-width: 1400px)
+      font-size: 24px
 
 .tab
   background-color: $brand_color_2
   display: none
-  height: 890px
+
+  @media(min-width: 1900px)
+    height: 890px
 
   &.is-active
     display: block
@@ -76,22 +120,82 @@
   .container
     max-width: 1690px
 
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      min-height: 462px
+
+    @media(min-width: 992px)
+      min-height: 614px
+
+    @media(min-width: 1200px)
+      min-height: 732px
+
+    @media(min-width: 1900px)
+      height: 890px
+
+  &__image
+    text-align: center
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      justify-content: flex-end
+      padding-left: 30px
+      text-align: right
+      width: 60%
+
+    @media(min-width: 1900px)
+      width: calc(100% - 680px)
+
+  &__info
+    @media(min-width: 768px)
+      padding-left: 30px
+      padding-right: 30px
+      width: 40%
+
+    @media(min-width: 1900px)
+      width: 680px
+
 .box-info
   color: #fff
+  padding-top: 30px
+  padding-bottom: 30px
 
-  h3
+  &__title
     color: #fff
     font-size: 35px
     font-weight: 500
     line-height: 1.2
-    margin-bottom: 42px
+    margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      margin-bottom: 42px
+
+  &__prices
+    margin-bottom: 20px
+
+    @media(min-width: 1900px)
+      margin-bottom: 50px
 
   .radio-label
+    font-size: 20px
+
     &:not(:last-child)
       margin-bottom: 14px
+
+    .radio-icon
+      top: 50%
+      transform: translateY(-50%)
 
   .medium
     font-weight: 500
 
-  &__prices
-    margin-bottom: 50px
+  &__period
+    display: inline-block
+    margin-right: 10px
+    min-width: 90px
+
+    @media(min-width: 1900px)
+      min-width: 98px
+      margin-right: 28px

@@ -121,67 +121,64 @@
     <div id="1" class="block-2">
       <div class="container">
         <h2>Боксы</h2>
-        <p>При бронировании на 2 месяца — скидка 3%, на 3 месяца — 5% <a href="#" target="_blank">Скачать прайс</a></p>
+        <p>При бронировании на 2 месяца — скидка 3%, на 3 месяца — 5% <a class="block-2__download-link" href="#" target="_blank">Скачать прайс</a></p>
         <div class="tabs-nav">
-          <a class="tabs-nav__item is-active" href="#" data-target="1">
+          <a class="js-tab-nav tabs-nav__item is-active" href="#" data-target="1">
             <span class="tabs-nav__item-title">XS</span>
             <span class="tabs-nav__item-square">2,5 м<sup>2</sup></span>
             <span class="tabs-nav__item-price">от 2 500 ₽</span>
           </a>
-          <a class="tabs-nav__item" href="#" data-target="2">
+          <a class="js-tab-nav tabs-nav__item" href="#" data-target="2">
             <span class="tabs-nav__item-title">S</span>
             <span class="tabs-nav__item-square">3,5 м<sup>2</sup></span>
             <span class="tabs-nav__item-price">от 2 390 ₽</span>
           </a>
-          <a class="tabs-nav__item" href="#" data-target="3">
+          <a class="js-tab-nav tabs-nav__item" href="#" data-target="3">
             <span class="tabs-nav__item-title">M</span>
             <span class="tabs-nav__item-square">4,6 м<sup>2</sup></span>
             <span class="tabs-nav__item-price">от 2 890 ₽</span>
           </a>
-          <a class="tabs-nav__item" href="#" data-target="4">
+          <a class="js-tab-nav tabs-nav__item" href="#" data-target="4">
             <span class="tabs-nav__item-title">L</span>
             <span class="tabs-nav__item-square">6,8 м<sup>2</sup></span>
             <span class="tabs-nav__item-price">от 3 800 ₽</span>
           </a>
-          <a class="tabs-nav__item" href="#" data-target="5">
+          <a class="js-tab-nav tabs-nav__item" href="#" data-target="5">
             <span class="tabs-nav__item-title">XL</span>
             <span class="tabs-nav__item-square">13,8 м<sup>2</sup></span>
             <span class="tabs-nav__item-price">от 25 100 ₽</span>
           </a>
-          <a class="tabs-nav__item" href="#" data-target="6">
+          <a class="js-tab-nav tabs-nav__item" href="#" data-target="6">
             <span class="tabs-nav__item-title">XXL</span>
             <span class="tabs-nav__item-square">28,2 м<sup>2</sup></span>
             <span class="tabs-nav__item-price">от 6 500 ₽</span>
           </a>
         </div>
       </div>
-      <div class="tab is-active" data-target="1">
+      <div class="js-tab tab is-active" data-target="1">
         <div class="container">
-          <div class="tab__image"></div>
+          <div class="tab__image">
+            <img src="images/content/block_2/box-1.svg" alt="">
+          </div>
           <div class="tab__info">
             <div class="box-info">
-              <h3>Бокс S</h3>
+              <h3 class="box-info__title">Бокс XS</h3>
               <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
               <div class="box-info__prices">
-                <label class="radio-label" for="price_1_box_1">
-                  <input id="price_1_box_1" type="radio" name="price" val="1">
-                  <span class="radio-icon"></span>
-                  <span class="radio-label__text">2 недели <span class="medium">2 390 ₽</span></span>
-                </label>
                 <label class="radio-label" for="price_2_box_1">
                   <input id="price_2_box_1" type="radio" name="price" val="2">
                   <span class="radio-icon"></span>
-                  <span class="radio-label__text">1 месяц <span class="medium">3 450 ₽</span></span>
+                  <span class="radio-label__text"><span class="box-info__period">1 месяц</span> <span class="medium">2 500 ₽</span></span>
                 </label>
                 <label class="radio-label" for="price_3_box_1">
                   <input id="price_3_box_1" type="radio" name="price" val="3">
                   <span class="radio-icon"></span>
-                  <span class="radio-label__text">2 месяца <span class="medium">6 650 ₽</span></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 месяца</span> <span class="medium">4 850 ₽</span></span>
                 </label>
                 <label class="radio-label" for="price_4_box_1">
                   <input id="price_4_box_1" type="radio" name="price" val="4">
                   <span class="radio-icon"></span>
-                  <span class="radio-label__text">3 месяца <span class="medium">9 850 ₽</span></span>
+                  <span class="radio-label__text"><span class="box-info__period">3 месяца</span> <span class="medium">7 125 ₽</span></span>
                 </label>
               </div>
               <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
@@ -189,11 +186,186 @@
           </div>
         </div>
       </div>
-      <div class="tab" data-target="2"></div>
-      <div class="tab" data-target="3"></div>
-      <div class="tab" data-target="4"></div>
-      <div class="tab" data-target="5"></div>
-      <div class="tab" data-target="6"></div>
+      <div class="js-tab tab" data-target="2">
+        <div class="container">
+          <div class="tab__image">
+            <img src="images/content/block_2/box-2.svg" alt="">
+          </div>
+          <div class="tab__info">
+            <div class="box-info">
+              <h3 class="box-info__title">Бокс S</h3>
+              <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
+              <div class="box-info__prices">
+                <label class="radio-label" for="price_1_box_2">
+                  <input id="price_1_box_2" type="radio" name="price" val="1">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 недели</span> <span class="medium">2 390 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_2_box_2">
+                  <input id="price_2_box_2" type="radio" name="price" val="2">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">1 месяц</span> <span class="medium">3 450 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_3_box_2">
+                  <input id="price_3_box_2" type="radio" name="price" val="3">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 месяца</span> <span class="medium">6 650 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_4_box_2">
+                  <input id="price_4_box_2" type="radio" name="price" val="4">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">3 месяца</span> <span class="medium">9 850 ₽</span></span>
+                </label>
+              </div>
+              <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-tab tab" data-target="3">
+        <div class="container">
+          <div class="tab__image">
+            <img src="images/content/block_2/box-3.svg" alt="">
+          </div>
+          <div class="tab__info">
+            <div class="box-info">
+              <h3 class="box-info__title">Бокс M</h3>
+              <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
+              <div class="box-info__prices">
+                <label class="radio-label" for="price_1_box_3">
+                  <input id="price_1_box_3" type="radio" name="price" val="1">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 недели</span> <span class="medium">2 890 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_2_box_3">
+                  <input id="price_2_box_3" type="radio" name="price" val="2">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">1 месяц</span> <span class="medium">4 850 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_3_box_3">
+                  <input id="price_3_box_3" type="radio" name="price" val="3">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 месяца</span> <span class="medium">9 400 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_4_box_3">
+                  <input id="price_4_box_3" type="radio" name="price" val="4">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">3 месяца</span> <span class="medium">13 800 ₽</span></span>
+                </label>
+              </div>
+              <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-tab tab" data-target="4">
+        <div class="container">
+          <div class="tab__image">
+            <img src="images/content/block_2/box-4.svg" alt="">
+          </div>
+          <div class="tab__info">
+            <div class="box-info">
+              <h3 class="box-info__title">Бокс L</h3>
+              <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
+              <div class="box-info__prices">
+                <label class="radio-label" for="price_1_box_4">
+                  <input id="price_1_box_4" type="radio" name="price" val="1">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 недели</span> <span class="medium">3 800 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_2_box_4">
+                  <input id="price_2_box_4" type="radio" name="price" val="2">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">1 месяц</span> <span class="medium">5 850 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_3_box_4">
+                  <input id="price_3_box_4" type="radio" name="price" val="3">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 месяца</span> <span class="medium">11 350 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_4_box_4">
+                  <input id="price_4_box_4" type="radio" name="price" val="4">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">3 месяца</span> <span class="medium">16 650 ₽</span></span>
+                </label>
+              </div>
+              <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-tab tab" data-target="5">
+        <div class="container">
+          <div class="tab__image">
+            <img src="images/content/block_2/box-5.svg" alt="">
+          </div>
+          <div class="tab__info">
+            <div class="box-info">
+              <h3 class="box-info__title">Бокс XL</h3>
+              <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
+              <div class="box-info__prices">
+                <label class="radio-label" for="price_1_box_5">
+                  <input id="price_1_box_5" type="radio" name="price" val="1">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 недели</span> <span class="medium">5 100 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_2_box_5">
+                  <input id="price_2_box_5" type="radio" name="price" val="2">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">1 месяц</span> <span class="medium">8 500 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_3_box_5">
+                  <input id="price_3_box_5" type="radio" name="price" val="3">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 месяца</span> <span class="medium">16 490 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_4_box_5">
+                  <input id="price_4_box_5" type="radio" name="price" val="4">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">3 месяца</span> <span class="medium">24 250 ₽</span></span>
+                </label>
+              </div>
+              <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-tab tab" data-target="6">
+        <div class="container">
+          <div class="tab__image">
+            <img src="images/content/block_2/box-6.svg" alt="">
+          </div>
+          <div class="tab__info">
+            <div class="box-info">
+              <h3 class="box-info__title">Бокс XXL</h3>
+              <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
+              <div class="box-info__prices">
+                <label class="radio-label" for="price_1_box_6">
+                  <input id="price_1_box_6" type="radio" name="price" val="1">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 недели</span> <span class="medium">6 500 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_2_box_6">
+                  <input id="price_2_box_6" type="radio" name="price" val="2">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">1 месяц</span> <span class="medium">10 000 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_3_box_6">
+                  <input id="price_3_box_6" type="radio" name="price" val="3">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">2 месяца</span> <span class="medium">19 400 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_4_box_6">
+                  <input id="price_4_box_6" type="radio" name="price" val="4">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text"><span class="box-info__period">3 месяца</span> <span class="medium">28 800 ₽</span></span>
+                </label>
+              </div>
+              <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="block-3">
@@ -207,7 +379,7 @@
     <div class="block-4">
       <div class="container">
         <h2>С нами легко</h2>
-        <p class="block-4__text">Мы — «Место Есть», склады для индвидуального хранения вещей<br> на базе морских контейнеров от 3,5 м2 до 30 м2</p>
+        <p class="block-4__text">Мы — «Место Есть», склады для индвидуального хранения вещей<br> на базе морских контейнеров от 3,5&nbsp;м<sup>2</sup>&nbsp;до&nbsp;30&nbsp;м<sup>2</sup></p>
         <div class="features2">
           <div class="features2__item">
             <div class="feature2">
@@ -255,7 +427,7 @@
         <div class="address-block">
           <p class="address-block__title">Адреса наших складов</p>
           <p class="address-block__city">Санкт-Петербург</p>
-          <p class="address-block__address">Кудрово, пр. Строителей 7</p>
+          <p class="address-block__address is-active">Кудрово, пр. Строителей 7</p>
           <p class="address-block__address">Пискаревский пр. 150 к2</p>
           <p class="address-block__address">Выборгское шоссе, 200А</p>
           <p class="address-block__address">Маршала Казакова, 21</p>
@@ -724,12 +896,12 @@
   <script type="text/javascript">
     var myMap;
     var locations = [
-      [60.014356, 30.452735, '«Место Есть» в Кудрово, пр. Строителей 7'],
-      [59.917222, 30.521996, '«Место Есть» на Пискарёвском проспекте, 150к2'],
+      [59.917222, 30.521996, '«Место Есть» в Кудрово, пр. Строителей 7'],
+      [60.014356, 30.452735, '«Место Есть» на Пискарёвском проспекте, 150к2'],
       [60.065795, 30.294255, '«Место Есть» на Выборгском шоссе, 200А'],
       [59.863956, 30.219308, '«Место Есть» на улице Маршала Казакова, 21'],
       [59.907677, 30.345423, '«Место Есть» на Лиговском пр./Растанной улице (Камчатская, 1)'],
-      [59.819571, 30.316515, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)'],
+      [59.818816, 30.312005, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)'],
       /*[52.586962, 58.294931, '«Место Есть» в г. Уфа, ул. Хадии Давлетшиной, 30'],*/
     ];
   
@@ -748,7 +920,7 @@
       var iconImageSize = [35, 62];
       var iconImageOffset = [-17, -62];
   
-      var i, placemark;
+      var i, placemark, addressClass, address;
   
       for (i = 0; i < locations.length; i++) {
         placemark = new ymaps.Placemark([locations[i][0], locations[i][1]], {
