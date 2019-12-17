@@ -1,9 +1,12 @@
 body
   color: #4F4F4F
   font-family: 'Rubik', Arial, sans-serif
-  font-size: 16px
+  font-size: 14px
   line-height: 1.388
   letter-spacing: -0.5px
+
+  @media(min-width: 992px)
+    font-size: 16px
 
   @media(min-width: 1400px)
     font-size: 18px
@@ -14,6 +17,9 @@ body
   @media(min-width: 1900px)
     font-size: 24px
 
+a
+  color: $brand_color_2
+
 h1,.h1,
 h2,.h2,
 h3,.h3,
@@ -22,10 +28,14 @@ h5,.h5,
 h6,.h6
   color: #333
   font-weight: 400
-  font-size: 30px
-  line-height: 36px
+  font-size: 26px
+  line-height: 30px
 
-  @media(min-width: 1500px)
+  @media(min-width: 1200px)
+    font-size: 36px
+    line-height: 40px
+
+  @media(min-width: 1600px)
     font-size: 40px
     line-height: 48px
 

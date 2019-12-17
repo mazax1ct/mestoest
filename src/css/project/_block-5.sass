@@ -1,1 +1,100 @@
 .block-5
+  position: relative
+
+  @media(min-width: 768px)
+    display: flex
+
+  @media(min-width: 1200px)
+    display: block
+
+  &__container
+    @media(min-width: 768px)
+      display: flex
+      width: 50%
+
+    @media(min-width: 1200px)
+      height: 0
+      left: 50%
+      max-width: 1790px
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+
+.address-block
+  background-color: $brand_color_2
+  color: #fff
+  font-size: 14px
+  padding: 20px
+  width: 100%
+
+  @media(min-width: 768px)
+    padding: 0 40px
+
+  @media(min-width: 1200px)
+    font-size: 16px
+    left: 50px
+    padding: 25px 40px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 350px
+
+  @media(min-width: 1400px)
+    width: 400px
+
+  @media(min-width: 1900px)
+    font-size: 24px
+    padding: 55px 75px
+    width: 610px
+
+  &__title
+    font-size: 20px
+    font-weight: 500
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      font-size: 26px
+
+    @media(min-width: 1400px)
+      font-size: 36px
+
+    @media(min-width: 1900px)
+      font-size: 40px
+      line-height: 48px
+      margin-bottom: 50px
+
+  &__city
+    margin-top: 20px
+    font-weight: 500
+    margin-bottom: 10px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      margin-top: 40px
+
+  &__address
+    &:not(:last-child)
+      margin-bottom: 10px
+
+.map
+  height: calc(100vh - 70px)
+  max-height: 500px
+  min-height: 300px
+
+  @media(min-width: 768px)
+    height: auto
+    max-height: none
+    min-height: 0
+    width: 50%
+
+  @media(min-width: 1200px)
+    height: calc(100vh - 80px)
+    min-height: 600px
+    max-height: 600px
+    width: 100%
+
+  @media(min-width: 1600px)
+    height: 765px
+    max-height: 765px
+    min-height: 765px

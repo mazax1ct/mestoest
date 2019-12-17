@@ -6,6 +6,92 @@
 
   @media(min-width: 1600px)
     padding-top: 95px
-    
+
   .container
     max-width: 1420px
+
+.tabs-nav
+  display: flex
+
+  &__item
+    background-color: #fff
+    border-radius: 10px 10px 0 0
+    display: block
+    margin-left: 25px
+    margin-right: 25px
+    padding-top: 25px
+    padding-bottom: 27px
+    text-decoration: none
+    text-align: center
+    transition: color 0.3s, background-color 0.3s
+    width: 175px
+
+    &:hover,
+    &.is-active
+      background-color: $brand_color_2
+      color: #fff
+
+      .tabs-nav__item-title,
+      .tabs-nav__item-square,
+      .tabs-nav__item-price
+        color: #fff
+
+  &__item-title,
+  &__item-square,
+  &__item-price
+    display: block
+    transition: color 0.3s
+
+  &__item-title
+    color: #333
+    font-size: 35px
+    font-weight: 500
+    line-height: 1.17
+    margin-bottom: 9px
+
+  &__item-square
+    color: #000
+    font-size: 20px
+    line-height: 1.2
+    margin-bottom: 22px
+
+    sup
+      font-size: 50%
+      margin-top: -3px
+
+  &__item-price
+    color: #636363
+    font-size: 24px
+    font-weight: 500
+    line-height: 1.1666
+
+.tab
+  background-color: $brand_color_2
+  display: none
+  height: 890px
+
+  &.is-active
+    display: block
+
+  .container
+    max-width: 1690px
+
+.box-info
+  color: #fff
+
+  h3
+    color: #fff
+    font-size: 35px
+    font-weight: 500
+    line-height: 1.2
+    margin-bottom: 42px
+
+  .radio-label
+    &:not(:last-child)
+      margin-bottom: 14px
+
+  .medium
+    font-weight: 500
+
+  &__prices
+    margin-bottom: 50px

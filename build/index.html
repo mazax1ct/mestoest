@@ -76,11 +76,11 @@
       </nav>
     </header>
 
-    <div class="banner" style="background-image: url('images/banner.jpg')">
+    <div class="banner" style="background-image: url('images/content/banner/banner.jpg')">
       <div class="container">
         <h1>Склады-боксы<br> в аренду от <span class="bold">2 500 ₽</span></h1>
         <p class="banner__text">для личных вещей <span class="color-orange">/</span> для вашего бизнеса</p>
-        <p class="banner__text2">Попробуйте первую неделю хранения бесплатно! <button class="button button--type_2" type="button" data-fancybox="popup3" data-src="#popup">Забронировать бокс</button></p>
+        <p class="banner__text2"><span>Попробуйте первую неделю хранения бесплатно!</span> <button class="button button--type_2" type="button" data-fancybox="popup3" data-src="#popup">Забронировать бокс</button></p>
       </div>
     </div>
 
@@ -122,7 +122,78 @@
       <div class="container">
         <h2>Боксы</h2>
         <p>При бронировании на 2 месяца — скидка 3%, на 3 месяца — 5% <a href="#" target="_blank">Скачать прайс</a></p>
+        <div class="tabs-nav">
+          <a class="tabs-nav__item is-active" href="#" data-target="1">
+            <span class="tabs-nav__item-title">XS</span>
+            <span class="tabs-nav__item-square">2,5 м<sup>2</sup></span>
+            <span class="tabs-nav__item-price">от 2 500 ₽</span>
+          </a>
+          <a class="tabs-nav__item" href="#" data-target="2">
+            <span class="tabs-nav__item-title">S</span>
+            <span class="tabs-nav__item-square">3,5 м<sup>2</sup></span>
+            <span class="tabs-nav__item-price">от 2 390 ₽</span>
+          </a>
+          <a class="tabs-nav__item" href="#" data-target="3">
+            <span class="tabs-nav__item-title">M</span>
+            <span class="tabs-nav__item-square">4,6 м<sup>2</sup></span>
+            <span class="tabs-nav__item-price">от 2 890 ₽</span>
+          </a>
+          <a class="tabs-nav__item" href="#" data-target="4">
+            <span class="tabs-nav__item-title">L</span>
+            <span class="tabs-nav__item-square">6,8 м<sup>2</sup></span>
+            <span class="tabs-nav__item-price">от 3 800 ₽</span>
+          </a>
+          <a class="tabs-nav__item" href="#" data-target="5">
+            <span class="tabs-nav__item-title">XL</span>
+            <span class="tabs-nav__item-square">13,8 м<sup>2</sup></span>
+            <span class="tabs-nav__item-price">от 25 100 ₽</span>
+          </a>
+          <a class="tabs-nav__item" href="#" data-target="6">
+            <span class="tabs-nav__item-title">XXL</span>
+            <span class="tabs-nav__item-square">28,2 м<sup>2</sup></span>
+            <span class="tabs-nav__item-price">от 6 500 ₽</span>
+          </a>
+        </div>
       </div>
+      <div class="tab is-active" data-target="1">
+        <div class="container">
+          <div class="tab__image"></div>
+          <div class="tab__info">
+            <div class="box-info">
+              <h3>Бокс S</h3>
+              <p>Идеально для хранения вещей однокомнатной квартиры или студии во время ремонта</p>
+              <div class="box-info__prices">
+                <label class="radio-label" for="price_1_box_1">
+                  <input id="price_1_box_1" type="radio" name="price" val="1">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text">2 недели <span class="medium">2 390 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_2_box_1">
+                  <input id="price_2_box_1" type="radio" name="price" val="2">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text">1 месяц <span class="medium">3 450 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_3_box_1">
+                  <input id="price_3_box_1" type="radio" name="price" val="3">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text">2 месяца <span class="medium">6 650 ₽</span></span>
+                </label>
+                <label class="radio-label" for="price_4_box_1">
+                  <input id="price_4_box_1" type="radio" name="price" val="4">
+                  <span class="radio-icon"></span>
+                  <span class="radio-label__text">3 месяца <span class="medium">9 850 ₽</span></span>
+                </label>
+              </div>
+              <button class="button button--type_2" type="button" data-fancybox="" data-src="#popup">Забронировать бокс</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab" data-target="2"></div>
+      <div class="tab" data-target="3"></div>
+      <div class="tab" data-target="4"></div>
+      <div class="tab" data-target="5"></div>
+      <div class="tab" data-target="6"></div>
     </div>
 
     <div class="block-3">
@@ -179,7 +250,21 @@
     </div>
 
     <div id="2" class="block-5">
-      Карта
+      <div id="map" class="map"></div>
+      <div class="block-5__container">
+        <div class="address-block">
+          <p class="address-block__title">Адреса наших складов</p>
+          <p class="address-block__city">Санкт-Петербург</p>
+          <p class="address-block__address">Кудрово, пр. Строителей 7</p>
+          <p class="address-block__address">Пискаревский пр. 150 к2</p>
+          <p class="address-block__address">Выборгское шоссе, 200А</p>
+          <p class="address-block__address">Маршала Казакова, 21</p>
+          <p class="address-block__address">Лиговский пр./Растанная (Камчатская, 1)</p>
+          <p class="address-block__address">ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)</p>
+          <p class="address-block__city">Санкт-Петербург</p>
+          <p class="address-block__address">ул. Хадии Давлетшиной, 30</p>
+        </div>
+      </div>
     </div>
 
     <div id="3" class="block-6">
@@ -317,7 +402,7 @@
     <div id="6" class="block-9">
       <h2>Отзывы</h2>
       <div class="review-meter">
-        <div class="review-meter__source"><img width="92" src="images/ya.jpg" alt="Яндекс"></div>
+        <div class="review-meter__source"><img width="92" src="images/content/block_9/ya.jpg" alt="Яндекс"></div>
         <div class="review-meter__rating">
           <img src="images/icons/star.svg" alt="1 звезда">
           <img src="images/icons/star.svg" alt="1 звезда">
@@ -329,7 +414,7 @@
         <div class="review-meter__count">19 отзывов</div>
       </div>
       <div class="review-meter">
-        <div class="review-meter__source"><img width="108" src="images/google.jpg" alt="Google"></div>
+        <div class="review-meter__source"><img width="108" src="images/content/block_9/google.jpg" alt="Google"></div>
         <div class="review-meter__rating">
           <img src="images/icons/star.svg" alt="1 звезда">
           <img src="images/icons/star.svg" alt="1 звезда">
@@ -480,11 +565,11 @@
     </div>
 
     <div class="block-11">
-      <h2>Вопросы, на которые мы уже ответили</h2>
-      <div class="questions">
+      <div class="container">
+        <h2>Вопросы, на которые мы уже ответили</h2>
         <div class="question">
           <p class="js-question-opener question__title">
-            <img src="images/icons/block_11/icon-1.svg" alt="">Где находятся боксы «Место есть» ?
+            <img src="images/icons/block_11/icon-1.svg" alt="">Где находятся боксы «Место есть»?
           </p>
           <div class="question__cut">
             <p>У нас 8 площадок, и мы планируем расширяться. Сейчас можно арендовать склад по адресам:<p>
@@ -501,7 +586,8 @@
             <img src="images/icons/block_11/icon-2.svg" alt="">Что можно хранить в морских контейнерах?
           </p>
           <div class="question__cut">
-            <p>Наши склады арендуют для хранения личных вещей и для хранения различных грузов и товаров. Семьи хранят коляски, сезонные вещи и старую мебель. Дачники часто арендуют склад-контейнер для хранения газонокосилок и теплиц, а спортсмены зимой
+            <p>Наши склады арендуют для хранения личных вещей и для хранения различных грузов и товаров. Семьи хранят коляски, сезонные вещи и старую мебель. Дачники часто арендуют склад-контейнер для хранения газонокосилок и теплиц, а спортсмены
+              зимой
               хранят мотоциклы, велосипеды и катера. Большие контейнеры арендуют под мебель, бытовую технику и грузы: товары для продажи в интернет-магазинах, паллеты, стройматериалы и всё для ремонта.</p>
           </div>
         </div>
@@ -632,6 +718,57 @@
   <script type="text/javascript" src="js/simplebar.min.js"></script>
   
   <script type="text/javascript" src="js/main.js"></script>
+  
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cba047df-856c-4d12-a13e-85e5ff327c48&lang=ru_RU&onload=init" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    var myMap;
+    var locations = [
+      [60.014356, 30.452735, '«Место Есть» в Кудрово, пр. Строителей 7'],
+      [59.917222, 30.521996, '«Место Есть» на Пискарёвском проспекте, 150к2'],
+      [60.065795, 30.294255, '«Место Есть» на Выборгском шоссе, 200А'],
+      [59.863956, 30.219308, '«Место Есть» на улице Маршала Казакова, 21'],
+      [59.907677, 30.345423, '«Место Есть» на Лиговском пр./Растанной улице (Камчатская, 1)'],
+      [59.819571, 30.316515, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)'],
+      /*[52.586962, 58.294931, '«Место Есть» в г. Уфа, ул. Хадии Давлетшиной, 30'],*/
+    ];
+  
+    function init(ymaps) {
+      myMap = new ymaps.Map('map', {
+        center: [59.957262, 29.705429],
+        zoom: 9
+      }, {
+        searchControlProvider: 'yandex#search'
+      });
+  
+      myMap.behaviors.disable('scrollZoom');
+  
+      var iconLayout = 'default#image';
+      var iconImageHref = 'images/icons/map-pin.svg';
+      var iconImageSize = [35, 62];
+      var iconImageOffset = [-17, -62];
+  
+      var i, placemark;
+  
+      for (i = 0; i < locations.length; i++) {
+        placemark = new ymaps.Placemark([locations[i][0], locations[i][1]], {
+          balloonContent: locations[i][2]
+        }, {
+          iconLayout: iconLayout,
+          iconImageHref: iconImageHref,
+          iconImageSize: iconImageSize,
+          iconImageOffset: iconImageOffset
+        });
+  
+        myMap.geoObjects.add(placemark);
+      }
+  
+      myMap.setBounds(myMap.geoObjects.getBounds(), {
+        checkZoomRange: true,
+        zoomMargin: 35
+      });
+    }
+  </script>
 </body>
 
 </html>

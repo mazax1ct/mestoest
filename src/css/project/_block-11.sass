@@ -1,6 +1,5 @@
 .block-11
   padding-top: 40px
-  padding-bottom: 40px
 
   @media(min-width: 1200px)
     padding-top: 65px
@@ -8,7 +7,10 @@
 
   @media(min-width: 1900px)
     padding-top: 100px
-    padding-bottom: 100px
+    padding-bottom: 70px
+
+  .container
+    max-width: 920px
 
   h2
     margin-bottom: 24px
@@ -17,30 +19,23 @@
     @media(min-width: 1900px)
       margin-bottom: 50px
 
-.questions
-  max-width: 930px
-  margin-left: auto
-  margin-right: auto
-  padding-left: 20px
-  padding-right: 20px
-
 .question
   &__title
     align-items: center
     color: #000
     cursor: pointer
     display: flex
-    font-size: 14px
+    font-size: 16px
     margin-bottom: 0
     padding-right: 30px
     padding-top: 10px
     padding-bottom: 10px
     position: relative
 
-    @media(min-width: 768px)
+    @media(min-width: 992px)
       font-size: 18px
 
-    @media(min-width: 1200px)
+    @media(min-width: 1600px)
       font-size: 24px
 
     &.is-active
@@ -79,7 +74,6 @@
   &__cut
     color: #797979
     display: none
-    font-size: 14px
     padding-left: 35px
     padding-right: 30px
     padding-bottom: 15px
@@ -89,6 +83,8 @@
       padding-left: 55px
 
     @media(min-width: 1200px)
-      font-size: 20px
       padding-bottom: 55px
       padding-left: 80px
+
+    @media(min-width: 1600px)
+      font-size: 20px

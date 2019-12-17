@@ -19,9 +19,15 @@
     font-size: 14px
 
   &__source
-    height: 39px
+    align-items: center
+    display: flex
+    height: 32px
     margin-right: 5px
-    width: 108px
+    width: 85px
+
+    @media(min-width: 414px)
+      height: 39px
+      width: 108px
 
   &__rating
     align-items: center
@@ -37,6 +43,7 @@
 
   &__score,
   &__count
+    padding-top: 3px
     white-space: nowrap
 
   &__score
@@ -118,6 +125,9 @@
   min-width: 100%
   padding: 30px
   text-align: center
+
+  @media(min-width: 992px)
+    font-size: 14px
 
   @media(min-width: 1400px)
     font-size: 16px
