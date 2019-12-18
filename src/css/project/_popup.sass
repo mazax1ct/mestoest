@@ -13,7 +13,12 @@
   padding-right: 15px
   padding-bottom: 30px
 
-  @media(min-width: 680px)
+  @media(min-width: 500px)
+    padding-left: 30px
+    padding-right: 30px
+    width: 400px
+
+  @media(min-width: 1600px)
     padding-top: 115px
     padding-left: 130px
     padding-right: 130px
@@ -35,7 +40,7 @@
     top: 10px
     width: 40px
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
       height: 62px
       right: 41px
       top: 37px
@@ -51,7 +56,7 @@
     transition: fill 0.3s
     width: 24px
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
       height: 33px
       width: 33px
 
@@ -62,22 +67,24 @@
     margin-bottom: 15px
     text-align: center
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
       font-size: 50px
       line-height: 60px
 
   &__text
     color: #6D6D6D
+    font-size: 14px
     margin-bottom: 15px
     text-align: center
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
+      font-size: 24px
       margin-bottom: 73px
 
   &__form
     margin-bottom: 20px
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
       margin-bottom: 54px
 
   &__form-label
@@ -89,26 +96,25 @@
     font-size: 18px
     font-weight: 500
     line-height: 20px
-    margin-top: 35px
+    margin-top: 15px
     margin-bottom: 10px
     padding-left: 16px
+
+    @media(min-width: 1600px)
+      margin-top: 35px
 
   &__form-button-block
     margin-top: 20px
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
       margin-top: 93px
-
-    .button
-      height: 62px
-      font-size: 20px
-      width: 100%
 
   &__note
     color: #575757
+    font-size: 14px
     text-align: center
 
-    @media(min-width: 650px)
+    @media(min-width: 1600px)
       font-size: 18px
       line-height: 20px
 
@@ -124,3 +130,21 @@
 
   input[type="checkbox"]:checked ~ .checkbox-label__text
     color: #575757
+
+  .button
+    height: 50px
+    font-size: 20px
+    width: 100%
+
+    @media(min-width: 1600px)
+      height: 62px
+
+  .input
+    height: 50px
+    padding-top: 15px
+    padding-bottom: 15px
+
+    @media(min-width: 1600px)
+      height: 68px
+      padding-top: 24px
+      padding-bottom: 24px

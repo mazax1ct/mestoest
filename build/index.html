@@ -40,11 +40,8 @@
     <symbol id="close" viewBox="0 0 34 34">
       <path d="M21.1096 16.9997L32.6135 5.49576C33.1595 4.95075 33.4666 4.21118 33.4673 3.43974C33.4679 2.6683 33.1621 1.92818 32.6171 1.38221C32.0721 0.836236 31.3325 0.529129 30.5611 0.528448C29.7897 0.527767 29.0495 0.833567 28.5036 1.37858L16.9997 12.8825L5.49576 1.37858C4.94979 0.832604 4.20929 0.525879 3.43717 0.525879C2.66505 0.525879 1.92455 0.832604 1.37858 1.37858C0.832604 1.92455 0.525879 2.66505 0.525879 3.43717C0.525879 4.20929 0.832604 4.94979 1.37858 5.49576L12.8825 16.9997L1.37858 28.5036C0.832604 29.0495 0.525879 29.79 0.525879 30.5622C0.525879 31.3343 0.832604 32.0748 1.37858 32.6208C1.92455 33.1667 2.66505 33.4735 3.43717 33.4735C4.20929 33.4735 4.94979 33.1667 5.49576 32.6208L16.9997 21.1169L28.5036 32.6208C29.0495 33.1667 29.79 33.4735 30.5622 33.4735C31.3343 33.4735 32.0748 33.1667 32.6208 32.6208C33.1667 32.0748 33.4735 31.3343 33.4735 30.5622C33.4735 29.79 33.1667 29.0495 32.6208 28.5036L21.1096 16.9997Z" />
     </symbol>
-    <symbol id="phone" viewBox="0 0 512 512">
-      <g>
-        <path d="M191.18 154.51a23.9 23.9 0 0 0 6.91-28l-48-112a24.16 24.16 0 0 0-27.5-13.9L106 4.43l69.73 162.69zm153.6 181.62l162.81 69.77 3.8-16.49a24.3 24.3 0 0 0-14-27.61l-112-48a24 24 0 0 0-28 6.91zM0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.59l12.89-55.82-176.61-75.69-15.88 19.4a370.59 370.59 0 0 1-177.21-177.2L150 188.23 74.34 11.74 18.59 24.61A24 24 0 0 0 0 48z" />
-        <path fill="#fff" d="M74.34 11.74L150 188.23l25.79-21.11L106 4.43zm270.44 324.39l-21.1 25.77 176.6 75.69 7.31-31.69z" />
-      </g>
+    <symbol id="phone" viewBox="0 0 1730 1730">
+      <path d="M347.922 748.706C486.322 1020.7 709.3 1242.72 981.294 1382.08L1192.74 1170.63C1218.69 1144.68 1257.13 1136.03 1290.77 1147.57C1398.42 1183.13 1514.71 1202.35 1633.89 1202.35C1686.75 1202.35 1730 1245.6 1730 1298.46V1633.89C1730 1686.75 1686.75 1730 1633.89 1730C731.406 1730 0 998.594 0 96.1111C0 43.25 43.25 0 96.1111 0H432.5C485.361 0 528.611 43.25 528.611 96.1111C528.611 216.25 547.833 331.583 583.394 439.228C593.967 472.867 586.278 510.35 559.367 537.261L347.922 748.706Z" />
     </symbol>
   </svg>
   <div class="wrapper">
@@ -81,7 +78,7 @@
             <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#6">Отзывы</a></li>
             <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#7">Блог</a></li>
             <li class="main-menu__item main-menu__item--desktop">
-              <a class="phone-button" href="tel:+78124438727">
+              <a class="phone-button" href="tel:+78124438727" title='Позвонить нам'>
                 <svg class="phone-button__icon" aria-hidden="true">
                   <use xlink:href="#phone" />
                 </svg>
@@ -452,14 +449,12 @@
         <div class="address-block">
           <p class="address-block__title">Адреса наших складов</p>
           <p class="address-block__city">Санкт-Петербург</p>
-          <p class="address-block__address is-active">Кудрово, пр. Строителей 7</p>
-          <p class="address-block__address">Пискаревский пр. 150 к2</p>
-          <p class="address-block__address">Выборгское шоссе, 200А</p>
-          <p class="address-block__address">Маршала Казакова, 21</p>
-          <p class="address-block__address">Лиговский пр./Растанная (Камчатская, 1)</p>
-          <p class="address-block__address">ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)</p>
-          <p class="address-block__city">Санкт-Петербург</p>
-          <p class="address-block__address">ул. Хадии Давлетшиной, 30</p>
+          <p class="address-block__address" data-id="id_1">Кудрово, пр. Строителей 7</p>
+          <p class="address-block__address" data-id="id_2">Пискаревский пр. 150 к2</p>
+          <p class="address-block__address" data-id="id_3">Выборгское шоссе, 200А</p>
+          <p class="address-block__address" data-id="id_4">Маршала Казакова, 21</p>
+          <p class="address-block__address" data-id="id_5">Лиговский пр./Растанная (Камчатская, 1)</p>
+          <p class="address-block__address" data-id="id_6">ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)</p>
         </div>
       </div>
     </div>
@@ -506,27 +501,39 @@
         <p class="block-7__text">За подробностями обращайтесь к менеджеру</p>
         <div class="features4">
           <div class="features4__item">
-            <div class="feature4">
+            <div class="js-action feature4" title="Кликни чтобы открыть!">
               <div class="feature4__inner">
-                <img src="images/icons/block-7/icon-1.svg" alt="">
+                <div class="feature4__image">
+                  <img src="images/icons/block-7/icon-1.svg" alt="">
+                </div>
                 <p class="feature4__text">Неделя в подарок<br> при аренде от месяца</p>
-                <p class="feature4__text-small">Акция для всех новых клиентов</p>
+                <div class="feature4__dropdown-container">
+                  <p class="feature4__text-small">Акция для всех новых клиентов</p>
+                  <p class="feature4__dropdown">Первая неделя аренды бесплатно - акция для всех новых клиентов при аренде от месяца, чтобы воспользоваться предложением, необходимо сообщить менеджеру о том, что об акции Вы узнали на нашем сайте.</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="features4__item">
-            <div class="feature4">
+            <div class="js-action feature4" title="Кликни чтобы открыть!">
               <div class="feature4__inner">
-                <img width="210" src="images/icons/block-7/icon-2.png" alt="">
+                <div class="feature4__image">
+                  <img width="210" src="images/icons/block-7/icon-2.png" alt="">
+                </div>
                 <p class="feature4__text">Скидка на грузоперевозки<br> «Грузовичкоф» — 20%</p>
-                <p class="feature4__text-small">Только для наших клиентов</p>
+                <div class="feature4__dropdown-container">
+                  <p class="feature4__text-small">Только для наших клиентов</p>
+                  <p class="feature4__dropdown">Не слишком длинное описание акции</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="features4__item">
             <div class="feature4">
               <div class="feature4__inner">
-                <img src="images/icons/block-7/icon-3.svg" alt="">
+                <div class="feature4__image">
+                  <img src="images/icons/block-7/icon-3.svg" alt="">
+                </div>
                 <p class="feature4__text">Скидки до 15%<br> при единовременной оплате</p>
               </div>
             </div>
@@ -534,7 +541,9 @@
           <div class="features4__item">
             <div class="feature4">
               <div class="feature4__inner">
-                <img src="images/icons/block-7/icon-4.svg" alt="">
+                <div class="feature4__image">
+                  <img src="images/icons/block-7/icon-4.svg" alt="">
+                </div>
                 <p class="feature4__text">Приведи друга и получи<br> неделю в подарок</p>
               </div>
             </div>
@@ -920,13 +929,12 @@
   <script type="text/javascript">
     var myMap;
     var locations = [
-      [59.917222, 30.521996, '«Место Есть» в Кудрово, пр. Строителей 7'],
-      [60.014356, 30.452735, '«Место Есть» на Пискарёвском проспекте, 150к2'],
-      [60.065795, 30.294255, '«Место Есть» на Выборгском шоссе, 200А'],
-      [59.863956, 30.219308, '«Место Есть» на улице Маршала Казакова, 21'],
-      [59.907677, 30.345423, '«Место Есть» на Лиговском пр./Растанной улице (Камчатская, 1)'],
-      [59.818816, 30.312005, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)'],
-      /*[52.586962, 58.294931, '«Место Есть» в г. Уфа, ул. Хадии Давлетшиной, 30'],*/
+      [59.917222, 30.521996, '«Место Есть» в Кудрово, пр. Строителей 7', 'id_1'],
+      [60.014356, 30.452735, '«Место Есть» на Пискарёвском проспекте, 150к2', 'id_2'],
+      [60.065795, 30.294255, '«Место Есть» на Выборгском шоссе, 200А', 'id_3'],
+      [59.863956, 30.219308, '«Место Есть» на улице Маршала Казакова, 21', 'id_4'],
+      [59.907677, 30.345423, '«Место Есть» на Лиговском пр./Растанной улице (Камчатская, 1)', 'id_5'],
+      [59.818816, 30.312005, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)', 'id_6']
     ];
   
     setTimeout(function() {
@@ -955,12 +963,25 @@
   
       for (i = 0; i < locations.length; i++) {
         placemark = new ymaps.Placemark([locations[i][0], locations[i][1]], {
-          balloonContent: locations[i][2]
+          balloonContent: locations[i][2],
+          id: locations[i][3]
         }, {
           iconLayout: iconLayout,
           iconImageHref: iconImageHref,
           iconImageSize: iconImageSize,
           iconImageOffset: iconImageOffset
+        });
+  
+        placemark.events.add('click', function(e) {
+          var id = e._cache.target.properties._data.id;
+          var el = document.querySelector('[data-id=' + id + ']');
+          var curr_el = document.querySelector('.address-block__address.is-active');
+          if (curr_el !== null) {
+            curr_el.classList.remove('is-active');
+            el.classList.add('is-active');
+          } else {
+            el.classList.add('is-active');
+          }
         });
   
         myMap.geoObjects.add(placemark);
@@ -970,6 +991,12 @@
         checkZoomRange: true,
         zoomMargin: 35
       });
+  
+      var body = document.querySelector('body');
+      if (body.offsetWidth < 768) {
+        myMap.behaviors.disable('drag');
+        myMap.behaviors.enable('MultiTouch');
+      }
     }
   </script>
 </body>

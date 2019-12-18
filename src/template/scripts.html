@@ -13,13 +13,12 @@
 <script type="text/javascript">
   var myMap;
   var locations = [
-    [59.917222, 30.521996, '«Место Есть» в Кудрово, пр. Строителей 7'],
-    [60.014356, 30.452735, '«Место Есть» на Пискарёвском проспекте, 150к2'],
-    [60.065795, 30.294255, '«Место Есть» на Выборгском шоссе, 200А'],
-    [59.863956, 30.219308, '«Место Есть» на улице Маршала Казакова, 21'],
-    [59.907677, 30.345423, '«Место Есть» на Лиговском пр./Растанной улице (Камчатская, 1)'],
-    [59.818816, 30.312005, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)'],
-    /*[52.586962, 58.294931, '«Место Есть» в г. Уфа, ул. Хадии Давлетшиной, 30'],*/
+    [59.917222, 30.521996, '«Место Есть» в Кудрово, пр. Строителей 7', 'id_1'],
+    [60.014356, 30.452735, '«Место Есть» на Пискарёвском проспекте, 150к2', 'id_2'],
+    [60.065795, 30.294255, '«Место Есть» на Выборгском шоссе, 200А', 'id_3'],
+    [59.863956, 30.219308, '«Место Есть» на улице Маршала Казакова, 21', 'id_4'],
+    [59.907677, 30.345423, '«Место Есть» на Лиговском пр./Растанной улице (Камчатская, 1)', 'id_5'],
+    [59.818816, 30.312005, '«Место Есть» в ТРК "ЛЕТО" (7ой-Предпортовый проезд, 1А)', 'id_6']
   ];
 
   setTimeout(function() {
@@ -48,12 +47,25 @@
 
     for (i = 0; i < locations.length; i++) {
       placemark = new ymaps.Placemark([locations[i][0], locations[i][1]], {
-        balloonContent: locations[i][2]
+        balloonContent: locations[i][2],
+        id: locations[i][3]
       }, {
         iconLayout: iconLayout,
         iconImageHref: iconImageHref,
         iconImageSize: iconImageSize,
         iconImageOffset: iconImageOffset
+      });
+
+      placemark.events.add('click', function(e) {
+        var id = e._cache.target.properties._data.id;
+        var el = document.querySelector('[data-id=' + id + ']');
+        var curr_el = document.querySelector('.address-block__address.is-active');
+        if (curr_el !== null) {
+          curr_el.classList.remove('is-active');
+          el.classList.add('is-active');
+        } else {
+          el.classList.add('is-active');
+        }
       });
 
       myMap.geoObjects.add(placemark);
@@ -63,5 +75,11 @@
       checkZoomRange: true,
       zoomMargin: 35
     });
+
+    var body = document.querySelector('body');
+    if (body.offsetWidth < 768) {
+      myMap.behaviors.disable('drag');
+      myMap.behaviors.enable('MultiTouch');
+    }
   }
 </script>
