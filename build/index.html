@@ -40,6 +40,12 @@
     <symbol id="close" viewBox="0 0 34 34">
       <path d="M21.1096 16.9997L32.6135 5.49576C33.1595 4.95075 33.4666 4.21118 33.4673 3.43974C33.4679 2.6683 33.1621 1.92818 32.6171 1.38221C32.0721 0.836236 31.3325 0.529129 30.5611 0.528448C29.7897 0.527767 29.0495 0.833567 28.5036 1.37858L16.9997 12.8825L5.49576 1.37858C4.94979 0.832604 4.20929 0.525879 3.43717 0.525879C2.66505 0.525879 1.92455 0.832604 1.37858 1.37858C0.832604 1.92455 0.525879 2.66505 0.525879 3.43717C0.525879 4.20929 0.832604 4.94979 1.37858 5.49576L12.8825 16.9997L1.37858 28.5036C0.832604 29.0495 0.525879 29.79 0.525879 30.5622C0.525879 31.3343 0.832604 32.0748 1.37858 32.6208C1.92455 33.1667 2.66505 33.4735 3.43717 33.4735C4.20929 33.4735 4.94979 33.1667 5.49576 32.6208L16.9997 21.1169L28.5036 32.6208C29.0495 33.1667 29.79 33.4735 30.5622 33.4735C31.3343 33.4735 32.0748 33.1667 32.6208 32.6208C33.1667 32.0748 33.4735 31.3343 33.4735 30.5622C33.4735 29.79 33.1667 29.0495 32.6208 28.5036L21.1096 16.9997Z" />
     </symbol>
+    <symbol id="phone" viewBox="0 0 512 512">
+      <g>
+        <path d="M191.18 154.51a23.9 23.9 0 0 0 6.91-28l-48-112a24.16 24.16 0 0 0-27.5-13.9L106 4.43l69.73 162.69zm153.6 181.62l162.81 69.77 3.8-16.49a24.3 24.3 0 0 0-14-27.61l-112-48a24 24 0 0 0-28 6.91zM0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.59l12.89-55.82-176.61-75.69-15.88 19.4a370.59 370.59 0 0 1-177.21-177.2L150 188.23 74.34 11.74 18.59 24.61A24 24 0 0 0 0 48z" />
+        <path fill="#fff" d="M74.34 11.74L150 188.23l25.79-21.11L106 4.43zm270.44 324.39l-21.1 25.77 176.6 75.69 7.31-31.69z" />
+      </g>
+    </symbol>
   </svg>
   <div class="wrapper">
     <header class="header">
@@ -67,13 +73,23 @@
         </button>
         <div class="container">
           <ul id="main-menu" class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link" href="#1">Боксы и цены</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#2">Адреса</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#3">Дополнительные услуги</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#4">Акции</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#5">Фотогалерея</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#6">Отзывы</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#7">Блог</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#1">Боксы и цены</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#2">Адреса</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#3">Дополнительные услуги</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#4">Акции</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#5">Фотогалерея</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#6">Отзывы</a></li>
+            <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#7">Блог</a></li>
+            <li class="main-menu__item main-menu__item--desktop">
+              <a class="phone-button" href="tel:+78124438727">
+                <svg class="phone-button__icon" aria-hidden="true">
+                  <use xlink:href="#phone" />
+                </svg>
+              </a>
+            </li>
+            <li class="main-menu__item main-menu__item--desktop">
+              <button class="button button--type_2" type="button" data-fancybox="popup_11" data-src="#popup">Забронировать бокс</button>
+            </li>
           </ul>
         </div>
       </nav>
@@ -160,8 +176,9 @@
       </div>
       <div class="js-tab tab is-active" data-target="1">
         <div class="container">
-          <div class="tab__image">
-            <img src="images/content/block_2/box-1.png" alt="">
+          <div class="tab__image-block">
+            <img class="tab__image" src="images/content/block_2/box-1.png" alt="Бокс XS">
+            <div class="tab__pseudo-image" style="background-image: url('images/content/block_2/box-1.png')"></div>
           </div>
           <div class="tab__info">
             <div class="box-info">
@@ -191,8 +208,9 @@
       </div>
       <div class="js-tab tab" data-target="2">
         <div class="container">
-          <div class="tab__image">
-            <img src="images/content/block_2/box-2.png" alt="">
+          <div class="tab__image-block">
+            <img class="tab__image" src="images/content/block_2/box-2.png" alt="Бокс XS">
+            <div class="tab__pseudo-image" style="background-image: url('images/content/block_2/box-2.png')"></div>
           </div>
           <div class="tab__info">
             <div class="box-info">
@@ -227,8 +245,9 @@
       </div>
       <div class="js-tab tab" data-target="3">
         <div class="container">
-          <div class="tab__image">
-            <img src="images/content/block_2/box-3.png" alt="">
+          <div class="tab__image-block">
+            <img class="tab__image" src="images/content/block_2/box-3.png" alt="Бокс XS">
+            <div class="tab__pseudo-image" style="background-image: url('images/content/block_2/box-3.png')"></div>
           </div>
           <div class="tab__info">
             <div class="box-info">
@@ -263,8 +282,9 @@
       </div>
       <div class="js-tab tab" data-target="4">
         <div class="container">
-          <div class="tab__image">
-            <img src="images/content/block_2/box-4.png" alt="">
+          <div class="tab__image-block">
+            <img class="tab__image" src="images/content/block_2/box-4.png" alt="Бокс XS">
+            <div class="tab__pseudo-image" style="background-image: url('images/content/block_2/box-4.png')"></div>
           </div>
           <div class="tab__info">
             <div class="box-info">
@@ -299,8 +319,9 @@
       </div>
       <div class="js-tab tab" data-target="5">
         <div class="container">
-          <div class="tab__image">
-            <img src="images/content/block_2/box-5.png" alt="">
+          <div class="tab__image-block">
+            <img class="tab__image" src="images/content/block_2/box-5.png" alt="Бокс XS">
+            <div class="tab__pseudo-image" style="background-image: url('images/content/block_2/box-5.png')"></div>
           </div>
           <div class="tab__info">
             <div class="box-info">
@@ -335,8 +356,9 @@
       </div>
       <div class="js-tab tab" data-target="6">
         <div class="container">
-          <div class="tab__image">
-            <img src="images/content/block_2/box-6.png" alt="">
+          <div class="tab__image-block">
+            <img class="tab__image" src="images/content/block_2/box-6.png" alt="Бокс XS">
+            <div class="tab__pseudo-image" style="background-image: url('images/content/block_2/box-6.png')"></div>
           </div>
           <div class="tab__info">
             <div class="box-info">
@@ -688,7 +710,8 @@
               <div class="blog__inner">
                 <p class="blog__date">12.12.2019</p>
                 <p class="blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="blog__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet placeat eius quis nesciunt nam magni. Laboriosam ut dolore harum?</p>
+                <p class="blog__preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at egestas fermentum urna proin sollicitudin quisque. Proin at egestas fermentum urna proin sollicitudin quisque. Proin at egestas fermentum
+                  urna proin sollicitudin.</p>
                 <p class="blog__read-more">Читать</p>
               </div>
             </div>

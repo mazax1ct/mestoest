@@ -1,7 +1,11 @@
 //функция навешивания класса на шапку
 var resize_scroll = function(e) {
   var h = $(".header");
-  $(window).scrollTop() > $(".header__top").innerHeight()
+  $(window).scrollTop() > h.innerHeight()
+    ? h.addClass("scrolled2")
+    : h.removeClass("scrolled2");
+
+  $(window).scrollTop() > h.innerHeight()*1.2
     ? h.addClass("scrolled")
     : h.removeClass("scrolled");
 };
@@ -60,7 +64,7 @@ $(document).ready(function () {
   });
 
   //навигация по меню
-  $('#main-menu a').click(function () {
+  $('#main-menu .js-scroll-link').click(function () {
     $('body').removeClass('overflow');
     $('.main-menu').removeClass('is-open');
     return false;
