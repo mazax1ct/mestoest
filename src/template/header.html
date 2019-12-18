@@ -5,10 +5,15 @@
     </div>
     <p class="header__slogan">Всегда «Место есть» для личного пространства</p>
     <p class="header__phone-block">
-      <a class="header__phone" href="tel:+78124438727">8 812 443-87-27</a>
+      <a class="header__phone" href="tel:+78124438727">
+        <svg class="header__phone-icon" aria-hidden="true">
+          <use xlink:href="#phone" />
+        </svg>
+        <span class="header__phone-text">8 812 443-87-27</span>
+      </a>
       <span class="header__phone-note">Круглосуточно</span>
     </p>
-    <button class="button button--type_1" type="button" data-fancybox="popup" data-src="#popup">Забронировать бокс</button>
+    <button class="header__book-button button button--type_1" type="button" data-fancybox="popup" data-src="#popup">Забронировать бокс</button>
     <button class="js-menu-opener menu-opener" type="button">
       <svg class="menu-opener__icon" aria-hidden="true">
         <use xlink:href="#burger" />
@@ -30,13 +35,6 @@
         <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#5">Фотогалерея</a></li>
         <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#6">Отзывы</a></li>
         <li class="main-menu__item"><a class="js-scroll-link main-menu__link" href="#7">Блог</a></li>
-        <li class="main-menu__item main-menu__item--desktop">
-          <a class="phone-button" href="tel:+78124438727" title='Позвонить нам'>
-            <svg class="phone-button__icon" aria-hidden="true">
-              <use xlink:href="#phone" />
-            </svg>
-          </a>
-        </li>
         <li class="main-menu__item main-menu__item--desktop">
           <button class="button button--type_2" type="button" data-fancybox="popup_11" data-src="#popup">Забронировать бокс</button>
         </li>

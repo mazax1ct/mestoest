@@ -101,15 +101,14 @@
     line-height: 1
     margin-bottom: 0
 
-    @media(max-width: 599px)
-      display: none
-
   &__phone
+    align-items: center
     border-bottom: 1px dotted transparent
     color: $brand_color_1
-    display: block
+    display: flex
     font-size: 20px
     font-weight: 700
+    justify-content: center
     line-height: 21px
     text-decoration: none
     transition: border-color 0.3s, color 0.3s
@@ -123,8 +122,31 @@
       border-bottom-color: darken($brand_color_1, 5%)
       color: darken($brand_color_1, 5%)
 
+      .header__phone-icon
+        fill: darken($brand_color_3, 5%)
+
+  &__phone-icon
+    fill: $brand_color_3
+    height: 30px
+    transition: fill 0.3s
+    width: 30px
+
+    @media(min-width: 600px)
+      display: none
+
+  &__phone-text
+    @media(max-width: 599px)
+      display: none
+
   &__phone-note
     font-size: 12px
+
+    @media(max-width: 599px)
+      display: none
+
+  &__book-button
+    @media(max-width: 374px)
+      font-size: 10px
 
 .menu-opener
   align-items: center
@@ -237,21 +259,3 @@
     &:hover,
     &.selected
       border-bottom-color: $brand_color_3
-
-.phone-button
-  align-items: center
-  display: inline-flex
-  height: 50px
-  justify-content: center
-  min-width: 50px
-  width: 50px
-
-  &:hover
-    .phone-button__icon
-      fill: darken($brand_color_3, 5%)
-
-  &__icon
-    fill: $brand_color_3
-    height: 30px
-    transition: fill 0.3s
-    width: 30px

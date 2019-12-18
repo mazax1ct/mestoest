@@ -82,8 +82,12 @@ $(document).ready(function () {
 
   //тогглер акции
   $('.js-action').on('click', function() {
-    $('.js-action').removeClass('is-active');
-    $(this).addClass("is-active");
+    if($(this).hasClass('is-active')) {
+      $(this).removeClass('is-active')
+    } else {
+      $('.js-action').removeClass('is-active');
+      $(this).addClass("is-active");
+    }
     return false;
   });
 
